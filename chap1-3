@@ -1,0 +1,62 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+/*Elikson Rodriguez, Intro to Game Programming in Unity M[38869], 3/19/2024 */
+public class NewBehaviourScript : MonoBehaviour
+{
+    string Name = "Elikson";
+    int FavNum = 61;
+    string BestFriendName = "Jove";
+    public string InstructorName;
+    private int answer;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        Debug.Log("Hello Nick!");
+        Debug.Log("Hello, my name is " + Name + ", my favorite number is " + FavNum + " and my best friend's name is " + BestFriendName + ".");
+        Debug.LogFormat("Hello, my name is " + Name + ", my favorite number is " + FavNum + " and my best friend's name is " + BestFriendName + ".");
+        
+        //Calls PrintInstructorName method
+        PrintInstructorName();
+        
+        answer = -1;
+        Debug.Log(answer);
+
+        //Calls Add method
+        answer = Add(2,3);
+        Debug.Log(answer);
+
+        //Calling Add method again
+        answer = Add(FavNum, 3);
+        Debug.Log(answer);
+    }
+    //Method does not return anything and does not take in any parameters
+    void PrintInstructorName()
+    {
+        Debug.Log(InstructorName);
+    }
+    
+    /// <summary>
+    /// Method for adding two parameters. Parameters are variables just for the method they are put in 
+    /// </summary>
+    /// <param name="x"></param>
+    /// <param name="y"></param>
+    /// <returns></returns>
+    public int Add(int x,int y)
+    {
+        //Declare int variable in method
+        int result;
+        result = x + y;
+        //return an integer
+        return result;
+        //use "auto" comment?
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}
