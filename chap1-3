@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 /*Elikson Rodriguez, Intro to Game Programming in Unity M[38869], 3/19/2024 */
-public class NewBehaviourScript : MonoBehaviour
+public class HW1 : MonoBehaviour
 {
     string Name = "Elikson";
     int FavNum = 61;
